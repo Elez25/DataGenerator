@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Generator</title>
+<script src="JS/SplitIban.js"></script>
+<script src="JS/nombres.js"></script>
+<link rel="stylesheet" href="CSS/StylesPropios.css">
+</head>
+<body>
+    <h1>Random SP Iban</h1>
+    <label for="ibanInput">IBAN Español:</label>
+    <input type="text" id="ibanInput" value="">
+    <button onclick="generarIBAN()">Generar IBAN</button>
+    <h1>Split random Iban</h1>
+    <label for="inputIban">Introduce un IBAN:</label>
+    <input type="text" id="inputString">
+    <button onclick="splitIban()">Dividir</button>
+
+    <div id="output">
+        <label for="box_0">Segmento 1:</label>
+        <input type="text" id="box_0" class="box" readonly>
+        <label for="box_1">Segmento 2:</label>
+        <input type="text" id="box_1" class="box" readonly>
+        <label for="box_2">Segmento 3:</label>
+        <input type="text" id="box_2" class="box" readonly>
+        <label for="box_3">Segmento 4:</label>
+        <input type="text" id="box_3" class="box" readonly>
+        <label for="box_4">Segmento 5:</label>
+        <input type="text" id="box_4" class="box" readonly>
+    </div>
+
+    <h1>Nombre generator SP</h1>
+    <button onclick="generarNombreCompleto()">Genererar Nombre</button>
+    <label for="">Nombre</label>
+    <input type="text" id="name">
+    <label for="">Apellido 1</label>
+    <input type="text" id="surname1">
+    <label for="">Apellido 2</label>
+    <input type="text" id="surname2">
+    <label for="">Nombre Completo</label>
+    <input type="text" id="complete_name">
+    <br>
+    <label for="">Nombre Compuesto</label>
+    <input type="text" id="name2">
+    
+</html>
